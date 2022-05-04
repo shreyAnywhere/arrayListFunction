@@ -1,22 +1,22 @@
 public class ArrayListFunction {
 
-    int[] arr;
+    Object[] arr;
     int currSize = 0;
     int totalSize = 1;
 
     public ArrayListFunction(){
-        arr = new int[1];
+        arr = new Object[1];
     }
 
     public void increaseSize(){
-        int[] biggerArr = new int[2 * arr.length];
+        Object[] biggerArr = new Object[2 * arr.length];
 
         if (currSize >= 0) System.arraycopy(arr, 0, biggerArr, 0, currSize);
         arr = biggerArr;
         totalSize = totalSize * 2;
     }
 
-    public void add(int e){
+    public void add(Object e){
         if(currSize == totalSize)
             increaseSize();
 
