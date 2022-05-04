@@ -9,5 +9,6 @@ public class Main {
         obj.add(10);
 
         obj.printArray();
+        System.out.println(obj.toString());
     }
 }

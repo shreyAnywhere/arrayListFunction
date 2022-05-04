@@ -28,4 +28,13 @@ public class ArrayListFunction {
         for(int i=0;i<currSize;i++)
             System.out.print(arr[i] + " ");
     }
+
+    @Override
+    public String toString(){
+        String finalString = "";
+        for(int i=0;i<currSize;i++)
+            finalString += arr[i];
+
+        return finalString;
+    }
 }
