@@ -9,6 +9,15 @@ public class Main {
         obj.add(10);
 
         obj.printArray();
-        System.out.println(obj.toString());
+        System.out.println();
+        obj.remove(2);
+        obj.printArray();
+        obj.add(15);
+        obj.add(35);
+        System.out.println();
+        obj.printArray();
+        obj.remove(3);
+        System.out.println();
+        obj.printArray();
     }
 }
